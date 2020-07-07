@@ -55,6 +55,7 @@ public class MainActivity extends Activity {
         wv.requestFocusFromTouch();
         wv.loadUrl("file:///android_asset/web/index.html");
         view.addView(wv);
+        /**与JS通信，此方法有安全漏洞，详见：https://blog.csdn.net/carson_ho/article/details/64904691*/
         wv.addJavascriptInterface(new Object(){
             @JavascriptInterface
             public void signIn(String msg) {
