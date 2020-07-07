@@ -3,6 +3,10 @@
 #### 介绍
 用来将Web(h5)项目打包成APP的壳
 
+测试的web太大没传
+main/assers/web/目录下新建一个html并写上JS
+myapp.signIn("aa");即可调用android中的方法
+
 #### 软件架构
 软件架构说明
 
